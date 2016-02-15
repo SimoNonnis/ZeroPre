@@ -1,0 +1,19 @@
+{
+  "name": "ZeroPre",
+  "version": "0.0.1",
+  "description": "Super lightweight boilerplate for frontend development (css preprocessing)",
+  "scripts": {
+    "start": "touch src/scss/utils/utilities.scss && curl https://raw.githubusercontent.com/SimoNonnis/CssUtilityClasses/master/utilities.css > src/scss/utils/utilities.scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SimoNonnis/ZeroPre.git"
+  },
+  "keywords": [],
+  "author": "Simon Nonnis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SimoNonnis/ZeroPre/issues"
+  },
+  "homepage": "https://github.com/SimoNonnis/ZeroPre#readme"
+}
