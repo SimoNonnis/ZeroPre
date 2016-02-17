@@ -1,2 +1,2 @@
 # ZeroPre
-Super lightweight boilerplate for frontend development (css preprocessing)
+Super lightweight boilerplate for frontend development (scss version)
