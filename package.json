@@ -3,7 +3,12 @@
   "version": "0.0.1",
   "description": "Super lightweight boilerplate for frontend development (css preprocessing)",
   "scripts": {
-    "start": "touch src/scss/utils/utilities.scss && curl https://raw.githubusercontent.com/SimoNonnis/CssUtilityClasses/master/utilities.css > src/scss/utils/utilities.scss"
+    "clean": "rm -r dist && rm -r src/scss/utilities/*.scss",
+    "start": "touch src/scss/utilities/utilities.scss && curl https://raw.githubusercontent.com/SimoNonnis/CssUtilityClasses/master/utilities.css > src/scss/utilities/utilities.scss",
+    "precss": "rm -r dist && mkdir dist && cd dist && mkdir css",
+    "css": "node-sass --output-style compressed src/scss/main.scss > dist/css/main.css",
+    "postcss": "postcss --use autoprefixer -b 'last 2 versions' -r dist/css/main.css",
+    "minicss": "cleancss -o main.css > main.min.css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/SimoNonnis/ZeroPre/issues"
   },
-  "homepage": "https://github.com/SimoNonnis/ZeroPre#readme"
+  "homepage": "https://github.com/SimoNonnis/ZeroPre#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "node-sass": "^3.4.2",
+    "nodemon": "^1.8.1",
+    "postcss-cli": "^2.5.1"
+  }
 }

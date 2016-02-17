@@ -11,3 +11,8 @@ Thumbs.db
 # Logs and databases #
 ######################
 *.log
+
+# Folders #
+######################
+dist
+node_modules
