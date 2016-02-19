@@ -1,30 +1,34 @@
 {
-  "name": "ZeroPre",
+  "name": "ZeroScssNpmScripts",
   "version": "0.0.1",
-  "description": "Super lightweight boilerplate for frontend development (css preprocessing)",
+  "description": "Super lightweight boilerplate for frontend development (scss, npm scripts)",
   "scripts": {
     "clean": "rm -r dist && rm -r src/scss/utilities/*.scss",
     "start": "touch src/scss/utilities/utilities.scss && touch src/scss/base/normalize.scss && curl https://raw.githubusercontent.com/SimoNonnis/CssUtilityClasses/master/utilities.css > src/scss/utilities/utilities.scss && curl https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css > src/scss/base/normalize.scss",
-    "precss": "rm -r dist && mkdir dist && cd dist && mkdir css",
-    "css": "node-sass --output-style compressed src/scss/main.scss > dist/css/main.css",
-    "postcss": "postcss --use autoprefixer -b 'last 2 versions' -r dist/css/main.css",
-    "minicss": "cleancss -o main.css > main.min.css"
+    "precss": "mkdir -p dist && mkdir -p dist/css",
+    "css": "node-sass --output-style compressed src/scss/main.scss > dist/css/main.min.css",
+    "postcss": "postcss --use autoprefixer -b 'last 2 versions' -r dist/css/main.min.css",
+    "uglify": "mkdir -p dist && mkdir -p dist/js && uglifyjs src/js/main.js -m -c -o dist/js/app.min.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SimoNonnis/ZeroPre.git"
+    "url": "https://github.com/SimoNonnis/ZeroScssNpmScripts"
   },
-  "keywords": [],
+  "keywords": [
+    "boilerplate",
+    "scss",
+    "npm scripts"
+  ],
   "author": "Simon Nonnis",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SimoNonnis/ZeroPre/issues"
+    "url": "https://github.com/SimoNonnis/ZeroScssNpmScripts/issues"
   },
-  "homepage": "https://github.com/SimoNonnis/ZeroPre#readme",
+  "homepage": "https://github.com/SimoNonnis/ZeroScssNpmScripts#readme",
   "devDependencies": {
     "autoprefixer": "^6.3.3",
     "node-sass": "^3.4.2",
-    "nodemon": "^1.8.1",
-    "postcss-cli": "^2.5.1"
+    "postcss-cli": "^2.5.1",
+    "uglify-js": "^2.6.1"
   }
 }
