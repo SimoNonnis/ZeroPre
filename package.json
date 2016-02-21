@@ -1,7 +1,7 @@
 {
-  "name": "ZeroScssNpmScripts",
+  "name": "ZeroScss",
   "version": "0.0.1",
-  "description": "Super lightweight boilerplate for frontend development (scss, npm scripts)",
+  "description": "Super lightweight boilerplate for frontend development (scss, npm scripts, gulp)",
   "scripts": {
     "clean": "rm -r dist && rm -r src/scss/utilities/*.scss",
     "start": "touch src/scss/utilities/utilities.scss && touch src/scss/base/normalize.scss && curl https://raw.githubusercontent.com/SimoNonnis/CssUtilityClasses/master/utilities.css > src/scss/utilities/utilities.scss && curl https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css > src/scss/base/normalize.scss",
@@ -12,19 +12,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/SimoNonnis/ZeroScssNpmScripts"
+    "url": "https://github.com/SimoNonnis/ZeroScss"
   },
   "keywords": [
     "boilerplate",
     "scss",
-    "npm scripts"
+    "npm scripts",
+    "gulp"
   ],
   "author": "Simon Nonnis",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SimoNonnis/ZeroScssNpmScripts/issues"
+    "url": "https://github.com/SimoNonnis/ZeroScss/issues"
   },
-  "homepage": "https://github.com/SimoNonnis/ZeroScssNpmScripts#readme",
+  "homepage": "https://github.com/SimoNonnis/ZeroScss#readme",
   "devDependencies": {
     "autoprefixer": "^6.3.3",
     "node-sass": "^3.4.2",
