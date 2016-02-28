@@ -1,6 +1,6 @@
 {
   "name": "ZeroScssNpmScripts",
-  "version": "0.0.2",
+  "version": "0.0.6",
   "description": "Super lightweight boilerplate for frontend development (scss, npm scripts)",
   "scripts": {
     "clean": "rm -r dist",
