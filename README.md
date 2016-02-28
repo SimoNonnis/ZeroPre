@@ -1,7 +1,8 @@
-# ZeroPre
+### ZeroScssNpmScripts
 Super lightweight boilerplate for frontend development (scss, npm scripts)
-Run:
+
+##Install:
         sudo npm install
         npm run watch:all
 
-start coding.
+
