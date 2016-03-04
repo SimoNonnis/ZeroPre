@@ -4,7 +4,7 @@ Super lightweight boilerplate for frontend development (scss, npm scripts).
 
 ###Install:
         sudo npm install
-        npm run start
+        npm start
 
 Last comand give you an environment ready to:
 - Build your **dist** folder and subfolders that mirror you **src** folder structure
