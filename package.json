@@ -18,7 +18,7 @@
     "watch:img": "onchange 'src/images/*.*' -- npm run img",
     "watch:svg": "onchange 'src/images/svg/*.svg' -- npm run svg",
     "watch:all": "parallelshell 'npm run watch:css' 'npm run watch:js' 'npm run watch:img' 'npm run watch:svg'",
-    "start": "mkdir dist && npm run watch:all"
+    "start": "mkdir -p dist && npm run watch:all"
   },
   "repository": {
     "type": "git",
