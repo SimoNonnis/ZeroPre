@@ -1,6 +1,6 @@
 {
   "name": "ZeroScssNpmScripts",
-  "version": "0.3.0",
+  "version": "0.5.0",
   "description": "Super lightweight boilerplate for frontend development (scss, npm scripts)",
   "scripts": {
     "precss": "mkdir -p dist/css && rm -r dist/css && mkdir dist/css",
