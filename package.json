@@ -27,6 +27,7 @@
   "keywords": [
     "boilerplate",
     "scss",
+    "postcss",
     "npm scripts"
   ],
   "author": "Simon Nonnis",
