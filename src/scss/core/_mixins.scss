@@ -22,7 +22,7 @@
 
 
 
-/* Media Querie for min-width
+/* Media Query for min-width
    ========================================================================== */
 
 @mixin min-screen($res)
@@ -34,7 +34,7 @@
 }
 
 
-/* Media Querie for max-width
+/* Media Query for max-width
    ========================================================================== */
 
 @mixin max-screen($res)
@@ -45,6 +45,9 @@
   }
 }
 
+
+/* Media Query for min-width + max-width
+   ========================================================================== */
 
 @mixin screen($resMin, $resMax)
 {
