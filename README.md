@@ -14,6 +14,6 @@ Last comand give you an environment ready to:
 - Optimize **svgs** present inside **src/images/svg** and send them to **dist/images/svg**
 - Watch for changes in every folder and subfolder in **src** 
 
-Now start to create your project.
+
 
 
